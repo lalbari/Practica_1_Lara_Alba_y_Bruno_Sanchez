@@ -1,1 +1,27 @@
-.container-fluid {background-color: rgb(47, 230, 30);}
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: rgb(52, 102, 154); 
+    font-family: 'Lato', sans-serif;     
+}
+
+.navbar .nav-link {
+    color: #f0f0f0;                      
+    font-weight: bold;                   
+    transition: color 0.3s ease;         
+}
+
+.navbar .nav-link:hover {
+    color: rgba(240, 240, 240, 0.8);    
+}
+
+.navbar .btn-outline-success {
+    color: #f0f0f0;                      
+    font-weight: bold;
+    border-color: #f0f0f0;               
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: rgba(240, 240, 240, 0.7); 
+    color:  rgb(52, 102, 154);                             
+}
