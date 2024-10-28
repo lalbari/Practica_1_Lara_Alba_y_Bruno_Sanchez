@@ -1,7 +1,37 @@
 /* Estilos de la barra de navegación */
 .navbar {
     background-color: rgb(52, 102, 154); 
-    font-family: 'Lato', sans-serif;     
+    font-family: 'Lato', sans-serif;  
+    padding:0px 40px;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.navbar-logo {
+    height: 130px;
+    width: auto;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.navbar .btn-outline-success {margin-left: auto;}
+
+.navbar .collapse {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .navbar-nav {
+display: flex;
+justify-content: center;
+flex-grow: 1;
+}
+
+.navbar .nav-item {
+    margin: 0 45px; 
 }
 
 .navbar .nav-link {
@@ -17,11 +47,12 @@
 .navbar .btn-outline-success {
     color: #f0f0f0;                      
     font-weight: bold;
-    border-color: #f0f0f0;               
+    border-color: #f0f0f0; 
+    margin-right: 40px;              
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar .btn-outline-success:hover {
-    background-color: rgba(240, 240, 240, 0.7); 
+    background-color: #f0f0f0;
     color:  rgb(52, 102, 154);                             
 }
