@@ -1,6 +1,4 @@
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
+document.addEventListener("DOMContentLoaded", function() {
+  var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  myModal.show();
+});

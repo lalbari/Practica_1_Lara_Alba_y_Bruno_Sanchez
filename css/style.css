@@ -56,3 +56,22 @@ flex-grow: 1;
     background-color: #f0f0f0;
     color:  rgb(52, 102, 154);                             
 }
+
+/* Ventana modal*/
+.btn-custom-red {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+.btn-custom-red:hover {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.custom-link {
+    color: red;
+    text-decoration: none;
+}
+.custom-link:hover {
+    text-decoration: underline;
+}
