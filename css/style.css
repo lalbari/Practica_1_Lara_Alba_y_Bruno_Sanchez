@@ -1,5 +1,4 @@
 /* Estilos de la barra de navegación */
-
 .navbar {
     background-color: rgb(52, 102, 154); 
     font-family: 'Lato', sans-serif;  
@@ -10,13 +9,17 @@
 }
 
 .navbar-logo {
-    height: 130px;
+    height: 60px;
     width: auto;
     margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: inline-block;
 }
 
-.navbar .btn-outline-success {margin-left: auto;}
+.navbar .btn-outline-success {
+    margin-left: auto;
+}
 
 .navbar .collapse {
     display: flex;
@@ -59,26 +62,41 @@ flex-grow: 1;
 }
 
 /* Ventana modal*/
-.btn-custom-red {
-    background-color: red;
-    border-color: red;
+.modal .btn-custom-red {
+    background-color: rgb(232, 68, 54);
+    border-color: rgb(232, 68, 54);
     color: white;
 }
-.btn-custom-red:hover {
-    background-color: darkred;
-    border-color: darkred;
+
+.modal .btn-custom-red:hover {
+    background-color: rgb(191, 53, 46);
+    border-color: rgb(191, 53, 46);
 }
 
-.custom-link {
-    color: red;
+.modal .custom-link {
+    color: rgb(232, 68, 54);
     text-decoration: none;
 }
-.custom-link:hover {
+
+.modal .custom-link:hover {
     text-decoration: underline;
 }
 
-/* Estilos carrusel */
+.modal .modal-content {
+    padding: 0.5em;
+}
 
+/* Offcanvas*/
+.offcanvas {
+    z-index: 1060 !important;    
+}
+
+.offcanvas-body {
+  padding-top: 0em;
+}
+
+
+/* Estilos carrusel */
 #heroCarousel .carousel-item img {
     width: 100%;
     height: 700px; 
