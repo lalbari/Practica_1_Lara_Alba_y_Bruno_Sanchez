@@ -9,7 +9,7 @@
 }
 
 .navbar-logo {
-    height: 60px;
+    height: 40px;
     width: auto;
     margin-left: 20px;
     margin-top: 20px;
@@ -54,6 +54,11 @@ flex-grow: 1;
     border-color: #f0f0f0; 
     margin-right: 40px;              
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn i {
+    font-size: 24px;
+    margin-right: 8px;
 }
 
 .navbar .btn-outline-success:hover {
@@ -114,20 +119,29 @@ flex-grow: 1;
 
 .carousel-caption h5 {
     font-size: 2rem;
-    color: #ffffff;
+    font-family: 'Lato', sans-serif; 
+    color: rgb(52, 102, 154);
     margin: 0;                     
 }
 
 .carousel-caption p {
-    font-size: 1.2rem;             
-    color: #f0f0f0;                
+    font-size: 1.2rem;  
+    font-family: 'Lato', sans-serif;            
+    color: rgb(52, 102, 154);                
     margin: 5px 0 15px 0;          
 }
 
 .carousel-caption .btn {
-    background-color: #007bff;   
+    background-color: rgb(232, 68, 54);   
     border: none;                  
-    color: #ffffff;                
+    color: #ffffff;  
+    font-family: 'Lato', sans-serif;               
     font-weight: bold;             
-    padding: 10px 20px;            
+    padding: 10px 20px;  
+    transition: background-color 0.3s ease;          
+}
+
+.carousel-caption .btn:hover {
+    background-color: #f0f0f0;
+    color:rgb(232, 68, 54);
 }
