@@ -156,6 +156,37 @@
   </button>
 </div>
 
+   <!-- Buscador -->
+<div class="custom-bar">
+  <h3 class="text-white">Selecciona el número de personas</h3>
+  <div class="mb-3">
+      <input list="adults" class="form-control datalist-input" placeholder="Adultos">
+      <datalist id="adults">
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+      </datalist>
+
+      <input list="children" class="form-control datalist-input mt-2" placeholder="Niños">
+      <datalist id="children">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+      </datalist>
+  </div>
+
+  <button class="btn btn-outline-light" type="button" id="infoButton" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom">
+      Más Información
+  </button>
+
+  <div id="popover-content" style="display:none;">
+      <p>Selecciona el número de adultos y niños según tu grupo.</p>
+  </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
