@@ -83,20 +83,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* Modal 2º pagina*/
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("buscarvuelos").addEventListener("click", function(event) {
-        event.preventDefault(); // Evita la redirección inmediata
-
-        // Mostrar el modal de carga
+window.onload = function() {
+    setTimeout(function() {
         var loadingModal = document.getElementById("loadingModal");
-        loadingModal.style.display = "block"; // Muestra el modal de carga
-
-        // Obtener la URL de destino desde data-url
-        const targetUrl = event.currentTarget.getAttribute("data-url");
-
-        // Esperar un momento antes de redirigir
-        setTimeout(function() {
-            window.location.href = targetUrl; // Redirige a la página destino
-        }, 1000); // Ajusta el tiempo de espera en milisegundos si es necesario
-    });
-});
+        
+        if (loadingModal) {
+            loadingModal.style.display = "none";
+            document.getElementById("pageContent").style.display = "block";
+        }}, 1500);
+};
