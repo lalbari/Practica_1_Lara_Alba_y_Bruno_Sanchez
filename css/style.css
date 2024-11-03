@@ -18,7 +18,7 @@
 }
 
 .navbar .btn-outline-success {
-    margin-left: auto;
+    margin-right: 20px !important;
 }
 
 .navbar .collapse {
@@ -45,7 +45,9 @@ flex-grow: 1;
 }
 
 .navbar .nav-link:hover {
-    color: rgba(240, 240, 240, 0.8);    
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;  
 }
 
 .navbar .btn-outline-success {
@@ -57,7 +59,6 @@ flex-grow: 1;
 }
 
 .btn i {
-    font-size: 24px;
     margin-right: 8px;
 }
 
@@ -102,6 +103,11 @@ flex-grow: 1;
 
 
 /* Estilos carrusel */
+
+#heroCarousel {
+    margin-bottom: 100px;
+}
+
 #heroCarousel .carousel-item img {
     width: 100%;
     height: 500px; 
@@ -111,7 +117,7 @@ flex-grow: 1;
 
 .carousel-caption {
     top: 10%;
-    left: 5%; 
+    left: 6.5%; 
     transform: none;               
     text-align: left;              
     position: absolute;            
@@ -128,7 +134,7 @@ flex-grow: 1;
     font-size: 1.2rem;  
     font-family: 'Lato', sans-serif;            
     color: rgb(52, 102, 154);                
-    margin: 5px 0 15px 0;          
+    margin: 5px 0 15px 0;           
 }
 
 .carousel-caption .btn {
@@ -146,12 +152,80 @@ flex-grow: 1;
     color:rgb(232, 68, 54);
 }
 
+.carousel-control-prev, .carousel-control-next {
+    top: 70%;
+}
 
+/* Barra de busqueda */
+
+   .search-bar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    }
+    
+    .search-bar .form-label {
+    font-weight: bold;
+    color: rgb(232, 68, 54);
+    font-family: 'Lato', sans-serif;   
+    }
+    
+    #passengersPopover {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        border-color: rgb(200, 200, 200);
+        color: black;  
+    }
+
+    #passengersPopover:hover {
+        border-color: rgb(200, 200, 200);
+        color: black; 
+        background-color: #fff;
+    }
+    
+    .popover {
+        min-width: 25%;
+    }
+    
+    .popover div {
+        min-width: 25%;
+        font-family: 'Lato', sans-serif; 
+    }
+    
+    #buscarvuelos{
+        margin-top: 30px;
+        background-color: rgb(232, 68, 54);                  
+        color: #ffffff;  
+        font-family: 'Lato', sans-serif; 
+        border-color: rgb(232, 68, 54);  
+    }
+
+    #buscarvuelos:hover {
+        background-color: rgb(191, 53, 46); 
+        border-color: rgb(191, 53, 46);  
+    }
+
+    .form-control {
+        font-family: 'Lato', sans-serif; 
+        border-color: rgb(200, 200, 200);   
+    }
+
+    ::placeholder {
+        color: black !important;
+    }
 /* Estilos footer */
 
 .footer {
     background-color: rgb(52, 102, 154); 
-    padding: 20px 0; 
+    padding: 40px 0 5px; 
     text-align: center;
 }
 
@@ -160,18 +234,19 @@ flex-grow: 1;
     font-weight: bold;
     color: #f0f0f0;
     text-align: left;
+    font-size: 1rem;
 }
 
 .footer .social {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     text-align: left;
 }
 
 .footer .social a {
-    margin: 0 10px; 
+    margin: 0 10px 0 0; 
     color: #f0f0f0;
     text-decoration: none;
-    font-size: 1.5rem; 
+    font-size: 1rem; 
     transition: color 0.3s ease;
 }
 
@@ -192,15 +267,68 @@ flex-grow: 1;
 .footer .links a {
     color: #f0f0f0;
     text-decoration: none;
+    font-size: 0.9rem; 
 }
 
 .footer .links a:hover {
-    color: rgb(232, 68, 54);
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
-.footer .copyright {
-    margin-top: 20px;
-    font-size: 0.9rem;
+.footer .contacto {
+    margin-bottom: 20px;
     color: #f0f0f0; 
     text-align: left;
+    font-size: 0.9rem; 
+}
+
+.footer .contacto ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.footer .contacto li {
+    margin: 10px 0;
+}
+
+.footer .contacto a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 0.9rem; 
+}
+
+.footer .contacto a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer .contacto p {
+    margin: 5px 0;
+}
+
+.footer .contacto p:hover {
+    color: rgb(232, 68, 54); 
+}
+
+.footer .logo {
+    margin-top: -16px;
+    text-align: left;
+}
+
+.navbar-logo2 {
+    height: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.footer .copy {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #f0f0f0;
+}
+
+.footer div {
+    margin-bottom: 20px;
 }
