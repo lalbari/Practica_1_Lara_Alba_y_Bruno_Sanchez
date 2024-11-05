@@ -347,26 +347,61 @@ flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Alinear elementos en columna */
+    flex-direction: column;
 }
-
-/*/ {
-    position: fixed;
-    bottom: 20px; /* Ajusta según lo cerca que quieras el spinner del borde inferior
-    left: 50%; /* Centra el spinner horizontalmente
-    transform: translateX(-50%); /* Ajusta el centro
-    z-index: 1050; /* Asegura que el spinner esté por encima del contenido
-    width: 100%;
-    text-align: center; /* Centra el contenido dentro del div
-} */
 
 .spinner-grow {
-    width: 1.5rem; /* Tamaño del spinner */
+    width: 1.5rem;
     height: 1.5rem;
-    margin-top: 600px; /* Ajusta según lo cerca que quieras el spinner del borde inferior */
 }
 
-.bi-airplane {
-    font-size: 5rem; /* Tamaño del icono */
-    color: white; /* Color del icono */
+@keyframes moveravion {
+    0% {
+        transform: translateX(-50vw) rotate(90deg);
+    }
+    100% {
+        transform: translateX(50vw) rotate(90deg);
+    }
+}
+
+@keyframes movernube1 {
+    0% {
+        transform: translateX(40vw);
+    }
+    100% {
+        transform: translateX(-20vw);
+    }
+}
+
+@keyframes movernube2 {
+    0% {
+        transform: translateX(10vw);
+    }
+    100% {
+        transform: translateX(-50vw);
+    }
+}
+
+.bi-airplane-fill {
+    font-size: 5rem;
+    color: white;
+    transform: rotate(90deg);
+    display: inline-block;
+    animation: moveravion 5s linear infinite;
+}
+
+.bi-cloud.nube1 {
+    font-size: 5rem;
+    color: white;
+    display: inline-block;
+    animation: movernube1 5s linear infinite;
+    margin-top: 100px;
+}
+
+.bi-cloud.nube2 {
+    font-size: 5rem;
+    color: white;
+    display: inline-block;
+    animation: movernube2 5s linear infinite;
+    margin-bottom: 200px;
 }

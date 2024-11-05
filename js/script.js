@@ -58,13 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
           popoverTriggerEl.textContent = text;
       }
 
-      // Agregar eventos de cambio en cada input dentro del popover
       document.addEventListener('shown.bs.popover', function () {
           var adultsInput = document.getElementById('adults');
           var childrenInput = document.getElementById('children');
           var infantsInput = document.getElementById('infants');
 
-          // Llamar a la función cuando cambie el valor de cualquiera de los inputs
           adultsInput.addEventListener('input', updatePassengerText);
           childrenInput.addEventListener('input', updatePassengerText);
           infantsInput.addEventListener('input', updatePassengerText);
@@ -90,5 +88,5 @@ window.onload = function() {
         if (loadingModal) {
             loadingModal.style.display = "none";
             document.getElementById("pageContent").style.display = "block";
-        }}, 1500);
+        }}, 3000);
 };
