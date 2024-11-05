@@ -90,3 +90,25 @@ window.onload = function() {
             document.getElementById("pageContent").style.display = "block";
         }}, 3000);
 };
+
+/* Formulario*/
+function increment(id) {
+    let input = document.getElementById(id);
+    input.value = parseInt(input.value) + 1;
+}
+
+function decrement(id) {
+    let input = document.getElementById(id);
+    if (parseInt(input.value) > 0) {
+        input.value = parseInt(input.value) - 1;
+    }
+}
+
+$(document).ready(function() {
+    // Mostrar y ocultar el formulario de búsqueda con un efecto de deslizamiento
+    $('#searchToggle').click(function() {
+        $('#searchForm').slideToggle(); // Toggle del formulario de búsqueda
+    });
+});
+
+AOS.init();

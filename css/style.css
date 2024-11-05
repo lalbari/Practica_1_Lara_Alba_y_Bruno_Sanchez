@@ -5,7 +5,8 @@
     padding:0px 40px;
     display: flex;
     justify-content: center;  
-    align-items: center; 
+    align-items: center;
+    white-space: nowrap;
 }
 
 .navbar-logo {
@@ -175,6 +176,11 @@ flex-grow: 1;
     color: rgb(232, 68, 54);
     font-family: 'Lato', sans-serif;   
     }
+
+    .pasajerospopover {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     
     #passengersPopover {
         width: 100%;
@@ -182,12 +188,12 @@ flex-grow: 1;
         text-align: left;
         font-family: 'Lato', sans-serif;
         border-color: rgb(200, 200, 200);
-        color: black;  
+        color: rgb(172, 172, 172);  
     }
 
     #passengersPopover:hover {
         border-color: rgb(200, 200, 200);
-        color: black; 
+        color: rgb(172, 172, 172);
         background-color: #fff;
     }
     
@@ -219,7 +225,7 @@ flex-grow: 1;
     }
 
     ::placeholder {
-        color: black !important;
+        color: rgb(172, 172, 172) !important;
     }
 
 /* Estilos footer */
@@ -384,7 +390,7 @@ flex-grow: 1;
 
 .bi-airplane-fill {
     font-size: 5rem;
-    color: white;
+    color: #f0f0f0;
     transform: rotate(90deg);
     display: inline-block;
     animation: moveravion 5s linear infinite;
@@ -392,7 +398,7 @@ flex-grow: 1;
 
 .bi-cloud.nube1 {
     font-size: 5rem;
-    color: white;
+    color: #f0f0f0;
     display: inline-block;
     animation: movernube1 5s linear infinite;
     margin-top: 100px;
@@ -400,8 +406,180 @@ flex-grow: 1;
 
 .bi-cloud.nube2 {
     font-size: 5rem;
-    color: white;
+    color: #f0f0f0;
     display: inline-block;
     animation: movernube2 5s linear infinite;
     margin-bottom: 200px;
+}
+
+/* Formulario*/
+.form-container {
+    width: 35%;
+    padding: 15px;
+    position: absolute;
+    left: 7%;
+    font-family: 'Lato', sans-serif;
+}
+
+.containerformulario {
+    margin-bottom: 200px;
+    height: 800px !important;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.counter-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-group button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.tituloform {
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: rgb(232, 68, 54);
+}
+
+.formpasajeros {
+    margin-top: 50px;
+}
+
+.counter-input {
+    width: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.counter-label {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: rgb(232, 68, 54);
+}
+
+.class-label {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-size: 16px;
+    color: rgb(232, 68, 54);
+}
+
+.class-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    font-size: 16px;
+    white-space: nowrap;
+    
+}
+
+.search-btn {
+    width: 50%;
+    background-color: rgb(232, 68, 54);
+    color: #f0f0f0;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-btn:hover {
+    background-color: rgb(191, 53, 46);
+}
+
+.masymenos {
+    border-color: rgb(232, 68, 54);
+    color: rgb(232, 68, 54);
+    background-color: white;
+}
+
+.masymenos:hover {
+    border-color: rgb(232, 68, 54);
+    color: white;
+    background-color: rgb(232, 68, 54);
+}
+
+
+
+/*Barra de progreso */
+.progress-container {
+    position: relative;
+    max-width: 600px;
+    margin-top: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress {
+    background-color: #f0f0f0;
+    position: relative;
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: rgb(232, 68, 54);
+}
+
+.progress-steps {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 0;
+}
+
+.progress-step {
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(232, 68, 54);
+}
+
+.progress-step.active .circle {
+    background-color:  rgb(232, 68, 54);
+}
+
+.infobasica {
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.botonbuscar {
+    margin-bottom: 100px;
 }
