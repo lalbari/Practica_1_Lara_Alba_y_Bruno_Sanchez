@@ -132,3 +132,5 @@ $("#registrationForm").on("submit", function(e) {
         $("#registrationForm")[0].reset();
     }, 2000);
 });
+
+AOS.init();

@@ -650,3 +650,57 @@ padding: 0px 30px;
     border-color: white;
     padding-left: 25px;
 }
+
+/* Estilos tarjetas */
+.card {
+    overflow: hidden;
+}
+.card-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+.card:hover .card-body {
+    transform: translateY(-20%);
+}
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+ 
+    .card-footer-fixed {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+
+/* Estilos carrusel estaciones */
+
+#seasonCarousel .carousel-item img {
+    height: 400px; 
+    object-fit: cover;
+    filter: brightness(0.7); 
+}
+
+#seasonCarousel .carousel-caption {
+    bottom: 20%;
+}
+
+#seasonCarousel .carousel-caption h5 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+#seasonCarousel .carousel-caption p {
+    font-size: 1.2em;
+    color: #f8f9fa;
+}
