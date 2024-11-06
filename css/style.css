@@ -704,3 +704,17 @@ padding: 0px 30px;
     font-size: 1.2em;
     color: #f8f9fa;
 }
+
+
+/* Estilo Ilustración Xupery */
+
+.img-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea la imagen hacia la derecha */
+}
+
+.img-container img {
+    max-width: 100%; /* Permite que la imagen se ajuste al tamaño del contenedor sin deformarse */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen no se recorte ni deforme */
+}
