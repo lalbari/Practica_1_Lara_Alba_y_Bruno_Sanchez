@@ -104,11 +104,31 @@ function decrement(id) {
     }
 }
 
-$(document).ready(function() {
-    // Mostrar y ocultar el formulario de búsqueda con un efecto de deslizamiento
-    $('#searchToggle').click(function() {
-        $('#searchForm').slideToggle(); // Toggle del formulario de búsqueda
-    });
-});
+/* Ventana modal de registro con JQuery*/
 
-AOS.init();
+$("#registrationForm").on("submit", function(e) {
+    e.preventDefault();
+    
+    var email = $("#email").val().trim();
+        var password = $("#password").val().trim();
+
+        if (email === "" || password === "") {
+            alert("Por favor, completa todos los campos.");
+            return;
+        }
+
+        var emailPattern = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(email)) {
+            alert("Por favor, ingresa un correo válido.");
+            return;
+        }
+
+    $(".btn-danger").text("Procesando...");
+    
+    setTimeout(function() {
+        $(".btn-danger").text("Crea tu cuenta");
+        $("#errorMessage").addClass("d-none");
+        $("#successMessage").text("Registro completado con éxito.").removeClass("d-none");
+        $("#registrationForm")[0].reset();
+    }, 2000);
+});

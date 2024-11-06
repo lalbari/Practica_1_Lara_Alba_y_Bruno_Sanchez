@@ -73,6 +73,7 @@ flex-grow: 1;
     background-color: rgb(232, 68, 54);
     border-color: rgb(232, 68, 54);
     color: white;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
 
 .modal .btn-custom-red:hover {
@@ -89,8 +90,27 @@ flex-grow: 1;
     text-decoration: underline;
 }
 
+.custom-link {
+    color: rgb(232, 68, 54);
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
+
 .modal .modal-content {
     padding: 0.5em;
+}
+
+.modal-title {
+    text-align: center;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Offcanvas*/
@@ -582,4 +602,51 @@ flex-grow: 1;
 
 .botonbuscar {
     margin-bottom: 100px;
+}
+
+/*Botones extras */
+.cardextras {
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.cardextras:hover {
+    transform: scale(1.05);
+}
+
+.cardextras .bi {
+    font-size: 2rem;
+    color: rgb(52, 102, 154);
+}
+
+/*Newsletter */
+.newsletter {
+    background-color: rgb(232, 68, 54);
+    border-color: #f0f0f0;
+    padding: 40px 90px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 10px;
+
+}
+
+.btnnewsletter {
+background-color: black;
+color:#f0f0f0;
+padding: 0px 30px;
+}
+
+.btnnewsletter:hover {
+    color: black;
+    background-color:white;
+    }
+
+.correonewsletter {
+    padding: 15px;
+    border-color: white;
+    padding-left: 25px;
 }
