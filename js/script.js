@@ -133,4 +133,25 @@ $("#registrationForm").on("submit", function(e) {
     }, 2000);
 });
 
+/* AOS*/
 AOS.init();
+
+/* Toast*/
+const emailInput = document.getElementById('emailInput');
+const successToastElement = document.getElementById('successToast');
+const errorToastElement = document.getElementById('errorToast');
+const toastTrigger = document.getElementById('liveToastBtn');
+
+const successToast = new bootstrap.Toast(successToastElement);
+const errorToast = new bootstrap.Toast(errorToastElement);
+
+toastTrigger.addEventListener('click', () => {
+  const email = emailInput.value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (email && emailRegex.test(email)) {
+    successToast.show(); // Mostrar toast de éxito si el email es válido
+  } else {
+    errorToast.show(); // Mostrar toast de error si el email es inválido o está vacío
+  }
+});

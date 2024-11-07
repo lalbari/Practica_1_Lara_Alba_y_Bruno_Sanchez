@@ -173,7 +173,7 @@ flex-grow: 1;
     color:rgb(232, 68, 54);
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev.primero, .carousel-control-next.primero {
     top: 70%;
 }
 
@@ -611,7 +611,9 @@ flex-grow: 1;
     transition: transform 0.2s ease;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     border: none;
-    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(52, 102, 154);
+    color: white;
 }
 
 .cardextras:hover {
@@ -620,7 +622,12 @@ flex-grow: 1;
 
 .cardextras .bi {
     font-size: 2rem;
-    color: rgb(52, 102, 154);
+    color: white;
+}
+
+.container.botonesextras {
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 /*Newsletter */
@@ -631,6 +638,7 @@ flex-grow: 1;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     color: white;
     border-radius: 10px;
+    margin-bottom: 70px;
 
 }
 
@@ -661,6 +669,7 @@ padding: 0px 30px;
     width: 100%;
     transition: transform 0.3s ease;
     background-color: white;
+    padding: 16px;
 }
 .card:hover .card-body {
     transform: translateY(-20%);
@@ -672,8 +681,7 @@ padding: 0px 30px;
     transform: scale(1.05);
 }
 
- 
-    .card-footer-fixed {
+.card-footer-fixed {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -681,13 +689,47 @@ padding: 0px 30px;
     background-color: white;
 }
 
+.left-content h5 {
+    font-size: 1.25rem;
+    color: rgb(52, 102, 154);
+    margin-bottom: 4px;
+    margin-top: 6px;
+}
+  
+.left-content p {
+    font-size: 0.875rem;
+    margin-top: 2px;
+  }
+  
+.right-content .price {
+    font-size: 2.5rem;
+    color: rgb(232, 68, 54);
+    align-self: center;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  
+.tituloofertas {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    color: rgb(232, 68, 54);
+}
 
 /* Estilos carrusel estaciones */
+
+#seasonCarousel {
+margin-top: 70px !important;
+margin-bottom: 50px !important;
+max-width: 1300px;
+margin: auto;
+border-radius: 10px;
+}
 
 #seasonCarousel .carousel-item img {
     height: 400px; 
     object-fit: cover;
-    filter: brightness(0.7); 
+    filter: brightness(0.7);
+    border-radius: 10px;
 }
 
 #seasonCarousel .carousel-caption {
@@ -703,4 +745,8 @@ padding: 0px 30px;
 #seasonCarousel .carousel-caption p {
     font-size: 1.2em;
     color: #f8f9fa;
+}
+
+.toast {
+    background-color:rgba(127, 225, 126, 0.817)
 }
