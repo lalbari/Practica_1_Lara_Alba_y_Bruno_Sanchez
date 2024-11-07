@@ -248,117 +248,6 @@ flex-grow: 1;
         color: rgb(172, 172, 172) !important;
     }
 
-/* Estilos footer */
-
-.footer {
-    background-color: rgb(52, 102, 154); 
-    padding: 40px 0 5px; 
-    text-align: center;
-}
-
-.footer h5 {
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #f0f0f0;
-    text-align: left;
-    font-size: 1rem;
-}
-
-.footer .social {
-    margin-bottom: 35px;
-    text-align: left;
-}
-
-.footer .social a {
-    margin: 0 10px 0 0; 
-    color: #f0f0f0;
-    text-decoration: none;
-    font-size: 1rem; 
-    transition: color 0.3s ease;
-}
-
-.footer .social a:hover {
-    color: rgb(232, 68, 54); 
-}
-
-.footer .links ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.footer .links li {
-    margin: 5px 0;
-}
-
-.footer .links a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-size: 0.9rem; 
-}
-
-.footer .links a:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.footer .contacto {
-    margin-bottom: 20px;
-    color: #f0f0f0; 
-    text-align: left;
-    font-size: 0.9rem; 
-}
-
-.footer .contacto ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 5px 0;
-    text-align: left;
-}
-
-.footer .contacto li {
-    margin: 10px 0;
-}
-
-.footer .contacto a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-size: 0.9rem; 
-}
-
-.footer .contacto a:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.footer .contacto p {
-    margin: 5px 0;
-}
-
-.footer .contacto p:hover {
-    color: rgb(232, 68, 54); 
-}
-
-.footer .logo {
-    margin-top: -16px;
-    text-align: left;
-}
-
-.navbar-logo2 {
-    height: 20px;
-    text-align: left;
-    margin-top: 20px;
-}
-
-.footer .copy {
-    margin-top: 50px;
-    font-size: 0.8rem;
-    color: #f0f0f0;
-}
-
-.footer div {
-    margin-bottom: 20px;
-}
 
 /* Modal 2º pagina */
 
@@ -747,6 +636,7 @@ border-radius: 10px;
     color: #f8f9fa;
 }
 
+/* Toast */
 
 .toast {
     background-color:rgba(127, 225, 126, 0.817)
@@ -763,4 +653,116 @@ border-radius: 10px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+/* Estilos footer */
+
+.footer {
+    background-color: rgb(52, 102, 154); 
+    padding: 40px 0 5px; 
+    text-align: center;
+}
+
+.footer h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #f0f0f0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.footer .social {
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.footer .social a {
+    margin: 0 10px 0 0; 
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1rem; 
+    transition: color 0.3s ease;
+}
+
+.footer .social a:hover {
+    color: rgb(232, 68, 54); 
+}
+
+.footer .links ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer .links li {
+    margin: 5px 0;
+}
+
+.footer .links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 0.9rem; 
+}
+
+.footer .links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer .contacto {
+    margin-bottom: 20px;
+    color: #f0f0f0; 
+    text-align: left;
+    font-size: 0.9rem; 
+}
+
+.footer .contacto ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.footer .contacto li {
+    margin: 10px 0;
+}
+
+.footer .contacto a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 0.9rem; 
+}
+
+.footer .contacto a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer .contacto p {
+    margin: 5px 0;
+}
+
+.footer .contacto p:hover {
+    color: rgb(232, 68, 54); 
+}
+
+.footer .logo {
+    margin-top: -16px;
+    text-align: left;
+}
+
+.navbar-logo2 {
+    height: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.footer .copy {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #f0f0f0;
+}
+
+.footer div {
+    margin-bottom: 20px;
 }

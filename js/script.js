@@ -150,8 +150,17 @@ toastTrigger.addEventListener('click', () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (email && emailRegex.test(email)) {
-    successToast.show(); // Mostrar toast de éxito si el email es válido
+    successToast.show();
   } else {
-    errorToast.show(); // Mostrar toast de error si el email es inválido o está vacío
+    errorToast.show();
   }
 });
+
+/* Carousel*/
+    document.addEventListener("DOMContentLoaded", function() {
+        var heroCarousel = document.getElementById('heroCarousel');
+        var carousel = new bootstrap.Carousel(heroCarousel, {
+            interval: 4000,
+            ride: 'carousel'
+        });
+    });
