@@ -17,12 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* Carousel*/
-document.addEventListener("DOMContentLoaded", function() {
-  var heroCarousel = document.getElementById('heroCarousel');
-  var carousel = new bootstrap.Carousel(heroCarousel, {
-      interval: 4000,
-      ride: 'carousel'
-  });
+document.addEventListener('DOMContentLoaded', function () {
+    var heroCarousel = new bootstrap.Carousel(document.getElementById('heroCarousel'), {
+        interval: 4000,
+        ride: 'carousel'
+    });
 });
 
 /* Barra Busqueda*/
@@ -136,6 +135,19 @@ $("#registrationForm").on("submit", function(e) {
 /* AOS*/
 AOS.init();
 
+/*Configuración de Typed.js*/
+document.addEventListener('DOMContentLoaded', function () {
+    var typed = new Typed('#animated-text', {
+        strings: [
+            'Evita colas de última hora en el aeropuerto.',
+            'Haz el check-in hasta una hora antes del vuelo.'
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true
+    });
+});
+
 /* Toast*/
 const emailInput = document.getElementById('emailInput');
 const successToastElement = document.getElementById('successToast');
@@ -154,26 +166,4 @@ toastTrigger.addEventListener('click', () => {
   } else {
     errorToast.show();
   }
-});
-
-/* Carousel*/
-    document.addEventListener("DOMContentLoaded", function() {
-        var heroCarousel = document.getElementById('heroCarousel');
-        var carousel = new bootstrap.Carousel(heroCarousel, {
-            interval: 4000,
-            ride: 'carousel'
-        });
-    });
-
-/*Configuración de Typed.js*/
-document.addEventListener('DOMContentLoaded', function () {
-    var typed = new Typed('#animated-text', {
-        strings: [
-            'Evita colas de última hora en el aeropuerto.',
-            'Haz el check-in hasta una hora antes del vuelo.'
-        ],
-        typeSpeed: 50,
-        backSpeed: 30,
-        loop: true
-    });
-});
+}); 
